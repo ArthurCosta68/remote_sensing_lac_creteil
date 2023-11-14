@@ -1,0 +1,75 @@
+<graph id="Graph">
+  <version>1.0</version>
+  <node id="Read">
+    <operator>Read</operator>
+    <sources/>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <useAdvancedOptions>false</useAdvancedOptions>
+      <file>C:\Users\a.costa-cavalcante\Documents\remote_sensing_project\l1c_products\S2B_MSIL1C_20230910T105629_N0509_R094_T31UDQ_20230910T131423.SAFE.zip</file>
+      <copyMetadata>true</copyMetadata>
+      <bandNames/>
+      <pixelRegion>0,0,10980,10980</pixelRegion>
+      <maskNames/>
+    </parameters>
+  </node>
+  <node id="Subset">
+    <operator>Subset</operator>
+    <sources>
+      <sourceProduct refid="Resample"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <sourceBands>B1,B2,B3,B4,B5,B6,B7,B8,B8A,B9,B10,B11,B12</sourceBands>
+      <tiePointGrids/>
+      <region>0,0,0,0</region>
+      <referenceBand/>
+      <geoRegion>POLYGON ((2.437422037124634 48.78323745727539, 2.467484951019287 48.78323745727539, 2.467484951019287 48.77003479003906, 2.437422037124634 48.77003479003906, 2.437422037124634 48.78323745727539, 2.437422037124634 48.78323745727539))</geoRegion>
+      <subSamplingX>1</subSamplingX>
+      <subSamplingY>1</subSamplingY>
+      <fullSwath>false</fullSwath>
+      <copyMetadata>true</copyMetadata>
+    </parameters>
+  </node>
+  <node id="Resample">
+    <operator>Resample</operator>
+    <sources>
+      <sourceProduct refid="Read"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <referenceBand>B2</referenceBand>
+      <targetWidth/>
+      <targetHeight/>
+      <targetResolution/>
+      <upsampling>Nearest</upsampling>
+      <downsampling>First</downsampling>
+      <flagDownsampling>First</flagDownsampling>
+      <resamplingPreset/>
+      <bandResamplings/>
+      <resampleOnPyramidLevels>true</resampleOnPyramidLevels>
+    </parameters>
+  </node>
+  <node id="Write">
+    <operator>Write</operator>
+    <sources>
+      <sourceProduct refid="Subset"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <file>C:\Users\a.costa-cavalcante\Documents\remote_sensing_project\l1c_ressampled_subset_products\Subset_S2B_MSIL1C_20230910T105629_N0509_R094_T31UDQ_20230910T131423_resampled.dim</file>
+      <formatName>BEAM-DIMAP</formatName>
+    </parameters>
+  </node>
+  <applicationData id="Presentation">
+    <Description/>
+    <node id="Read">
+            <displayPosition x="19.0" y="136.0"/>
+    </node>
+    <node id="Subset">
+      <displayPosition x="225.0" y="137.0"/>
+    </node>
+    <node id="Resample">
+      <displayPosition x="127.0" y="137.0"/>
+    </node>
+    <node id="Write">
+            <displayPosition x="334.0" y="137.0"/>
+    </node>
+  </applicationData>
+</graph>
