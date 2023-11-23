@@ -1,0 +1,338 @@
+<PAMDataset>
+  <Subdataset name="//HDFEOS/SWATHS/OMI_Column_Amount_O3/Data_Fields/APrioriLayerO3">
+    <PAMDataset>
+      <Metadata>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_AuthorAffiliation">NASA/GSFC</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_AuthorName">U.S. OMI Science Team</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_GranuleDay">23</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_GranuleMonth">12</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_GranuleYear">2022</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_history">Subset by NASA GES DISC Level 2 Subsetter v1.5.3.6 at 2023-11-16 19:25:48.369417. Subset parameters: {"PRODUCT": ["OMTO3.003"], "INFILENAMES": ["OMI-Aura_L2-OMTO3_2022m1223t1207-o98082_v003-2022m1223t183313.he5"], "INFILETYPE": ["he5"], "OUTFILETYPE": ["he5"], "VARNAMES": ["/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/APrioriLayerO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/ColumnAmountO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/O3BelowCloud", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/StepOneO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/StepTwoO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/TerrainPressure"], "BOXLONRANGE": [2.437, 2.468], "BOXLATRANGE": [48.769, 48.784], "GRIDTYPES": ["SWATH"], "CONVERTFILETYPE": [false]}</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_InputVersions">OML1BRUG:1.1.3.2 OML1BIRR:1.0.00</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_InstrumentName">OMI</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_OrbitData">PREDICTED</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_PGEVERSION">2.2.1</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_ProcessingCenter">OMI SIPS</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_ProcessingHost">Linux minion7082 5.4.0-1064-fips x86_64</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_ProcessLevel">2</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_TAI93At0zOfGranule">945907210</MDI>
+        <MDI key="HDFEOS_INFORMATION_HDFEOSVersion">HDFEOS_5.1.12</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_EarthSunDistance">1.4715894e+11</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_NumTimes">1644</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_NumTimesSmallPixel">6848</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_VerticalCoordinate">Total Column</MDI>
+      </Metadata>
+      <PAMRasterBand band="1">
+        <Metadata>
+          <MDI key="MissingValue">-1.2676506e+30</MDI>
+          <MDI key="Offset">0</MDI>
+          <MDI key="ScaleFactor">1</MDI>
+          <MDI key="STATISTICS_MAXIMUM">63.586181640625</MDI>
+          <MDI key="STATISTICS_MEAN">25.523559266871</MDI>
+          <MDI key="STATISTICS_MINIMUM">1.5950627326965</MDI>
+          <MDI key="STATISTICS_STDDEV">20.173451194376</MDI>
+          <MDI key="STATISTICS_VALID_PERCENT">100</MDI>
+          <MDI key="Title">A Priori Ozone Profile</MDI>
+          <MDI key="UniqueFieldDefinition">TOMS-OMI-Shared</MDI>
+          <MDI key="Units">DU</MDI>
+          <MDI key="ValidRange">0 125</MDI>
+          <MDI key="_FillValue">-1.2676506e+30</MDI>
+        </Metadata>
+      </PAMRasterBand>
+    </PAMDataset>
+  </Subdataset>
+  <Subdataset name="//HDFEOS/SWATHS/OMI_Column_Amount_O3/Data_Fields/ColumnAmountO3">
+    <PAMDataset>
+      <Metadata>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_AuthorAffiliation">NASA/GSFC</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_AuthorName">U.S. OMI Science Team</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_GranuleDay">23</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_GranuleMonth">12</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_GranuleYear">2022</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_history">Subset by NASA GES DISC Level 2 Subsetter v1.5.3.6 at 2023-11-16 19:25:48.369417. Subset parameters: {"PRODUCT": ["OMTO3.003"], "INFILENAMES": ["OMI-Aura_L2-OMTO3_2022m1223t1207-o98082_v003-2022m1223t183313.he5"], "INFILETYPE": ["he5"], "OUTFILETYPE": ["he5"], "VARNAMES": ["/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/APrioriLayerO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/ColumnAmountO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/O3BelowCloud", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/StepOneO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/StepTwoO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/TerrainPressure"], "BOXLONRANGE": [2.437, 2.468], "BOXLATRANGE": [48.769, 48.784], "GRIDTYPES": ["SWATH"], "CONVERTFILETYPE": [false]}</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_InputVersions">OML1BRUG:1.1.3.2 OML1BIRR:1.0.00</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_InstrumentName">OMI</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_OrbitData">PREDICTED</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_PGEVERSION">2.2.1</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_ProcessingCenter">OMI SIPS</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_ProcessingHost">Linux minion7082 5.4.0-1064-fips x86_64</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_ProcessLevel">2</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_TAI93At0zOfGranule">945907210</MDI>
+        <MDI key="HDFEOS_INFORMATION_HDFEOSVersion">HDFEOS_5.1.12</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_EarthSunDistance">1.4715894e+11</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_NumTimes">1644</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_NumTimesSmallPixel">6848</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_VerticalCoordinate">Total Column</MDI>
+      </Metadata>
+      <PAMRasterBand band="1">
+        <Metadata>
+          <MDI key="MissingValue">-1.2676506e+30</MDI>
+          <MDI key="Offset">0</MDI>
+          <MDI key="ScaleFactor">1</MDI>
+          <MDI key="STATISTICS_MAXIMUM">87.153930664062</MDI>
+          <MDI key="STATISTICS_MEAN">87.153930664062</MDI>
+          <MDI key="STATISTICS_MINIMUM">87.153930664062</MDI>
+          <MDI key="STATISTICS_STDDEV">0</MDI>
+          <MDI key="STATISTICS_VALID_PERCENT">100</MDI>
+          <MDI key="Title">Best Total Ozone Solution</MDI>
+          <MDI key="UniqueFieldDefinition">TOMS-OMI-Shared</MDI>
+          <MDI key="Units">DU</MDI>
+          <MDI key="ValidRange">50 700</MDI>
+          <MDI key="_FillValue">-1.2676506e+30</MDI>
+        </Metadata>
+      </PAMRasterBand>
+    </PAMDataset>
+  </Subdataset>
+  <Subdataset name="//HDFEOS/SWATHS/OMI_Column_Amount_O3/Data_Fields/O3BelowCloud">
+    <PAMDataset>
+      <Metadata>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_AuthorAffiliation">NASA/GSFC</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_AuthorName">U.S. OMI Science Team</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_GranuleDay">23</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_GranuleMonth">12</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_GranuleYear">2022</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_history">Subset by NASA GES DISC Level 2 Subsetter v1.5.3.6 at 2023-11-16 19:25:48.369417. Subset parameters: {"PRODUCT": ["OMTO3.003"], "INFILENAMES": ["OMI-Aura_L2-OMTO3_2022m1223t1207-o98082_v003-2022m1223t183313.he5"], "INFILETYPE": ["he5"], "OUTFILETYPE": ["he5"], "VARNAMES": ["/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/APrioriLayerO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/ColumnAmountO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/O3BelowCloud", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/StepOneO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/StepTwoO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/TerrainPressure"], "BOXLONRANGE": [2.437, 2.468], "BOXLATRANGE": [48.769, 48.784], "GRIDTYPES": ["SWATH"], "CONVERTFILETYPE": [false]}</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_InputVersions">OML1BRUG:1.1.3.2 OML1BIRR:1.0.00</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_InstrumentName">OMI</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_OrbitData">PREDICTED</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_PGEVERSION">2.2.1</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_ProcessingCenter">OMI SIPS</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_ProcessingHost">Linux minion7082 5.4.0-1064-fips x86_64</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_ProcessLevel">2</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_TAI93At0zOfGranule">945907210</MDI>
+        <MDI key="HDFEOS_INFORMATION_HDFEOSVersion">HDFEOS_5.1.12</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_EarthSunDistance">1.4715894e+11</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_NumTimes">1644</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_NumTimesSmallPixel">6848</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_VerticalCoordinate">Total Column</MDI>
+      </Metadata>
+      <PAMRasterBand band="1">
+        <Metadata>
+          <MDI key="MissingValue">-1.2676506e+30</MDI>
+          <MDI key="Offset">0</MDI>
+          <MDI key="ScaleFactor">1</MDI>
+          <MDI key="STATISTICS_MAXIMUM">0</MDI>
+          <MDI key="STATISTICS_MEAN">0</MDI>
+          <MDI key="STATISTICS_MINIMUM">0</MDI>
+          <MDI key="STATISTICS_STDDEV">0</MDI>
+          <MDI key="STATISTICS_VALID_PERCENT">100</MDI>
+          <MDI key="Title">Ozone Below Fractional Cloud</MDI>
+          <MDI key="UniqueFieldDefinition">TOMS-OMI-Shared</MDI>
+          <MDI key="Units">DU</MDI>
+          <MDI key="ValidRange">0 100</MDI>
+          <MDI key="_FillValue">-1.2676506e+30</MDI>
+        </Metadata>
+      </PAMRasterBand>
+    </PAMDataset>
+  </Subdataset>
+  <Subdataset name="//HDFEOS/SWATHS/OMI_Column_Amount_O3/Data_Fields/StepOneO3">
+    <PAMDataset>
+      <Metadata>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_AuthorAffiliation">NASA/GSFC</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_AuthorName">U.S. OMI Science Team</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_GranuleDay">23</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_GranuleMonth">12</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_GranuleYear">2022</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_history">Subset by NASA GES DISC Level 2 Subsetter v1.5.3.6 at 2023-11-16 19:25:48.369417. Subset parameters: {"PRODUCT": ["OMTO3.003"], "INFILENAMES": ["OMI-Aura_L2-OMTO3_2022m1223t1207-o98082_v003-2022m1223t183313.he5"], "INFILETYPE": ["he5"], "OUTFILETYPE": ["he5"], "VARNAMES": ["/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/APrioriLayerO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/ColumnAmountO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/O3BelowCloud", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/StepOneO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/StepTwoO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/TerrainPressure"], "BOXLONRANGE": [2.437, 2.468], "BOXLATRANGE": [48.769, 48.784], "GRIDTYPES": ["SWATH"], "CONVERTFILETYPE": [false]}</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_InputVersions">OML1BRUG:1.1.3.2 OML1BIRR:1.0.00</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_InstrumentName">OMI</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_OrbitData">PREDICTED</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_PGEVERSION">2.2.1</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_ProcessingCenter">OMI SIPS</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_ProcessingHost">Linux minion7082 5.4.0-1064-fips x86_64</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_ProcessLevel">2</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_TAI93At0zOfGranule">945907210</MDI>
+        <MDI key="HDFEOS_INFORMATION_HDFEOSVersion">HDFEOS_5.1.12</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_EarthSunDistance">1.4715894e+11</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_NumTimes">1644</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_NumTimesSmallPixel">6848</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_VerticalCoordinate">Total Column</MDI>
+      </Metadata>
+      <PAMRasterBand band="1">
+        <Metadata>
+          <MDI key="MissingValue">-1.2676506e+30</MDI>
+          <MDI key="Offset">0</MDI>
+          <MDI key="ScaleFactor">1</MDI>
+          <MDI key="STATISTICS_MAXIMUM">280.76168823242</MDI>
+          <MDI key="STATISTICS_MEAN">280.76168823242</MDI>
+          <MDI key="STATISTICS_MINIMUM">280.76168823242</MDI>
+          <MDI key="STATISTICS_STDDEV">0</MDI>
+          <MDI key="STATISTICS_VALID_PERCENT">100</MDI>
+          <MDI key="Title">Step 1 Ozone Solution</MDI>
+          <MDI key="UniqueFieldDefinition">TOMS-OMI-Shared</MDI>
+          <MDI key="Units">DU</MDI>
+          <MDI key="ValidRange">50 700</MDI>
+          <MDI key="_FillValue">-1.2676506e+30</MDI>
+        </Metadata>
+      </PAMRasterBand>
+    </PAMDataset>
+  </Subdataset>
+  <Subdataset name="//HDFEOS/SWATHS/OMI_Column_Amount_O3/Data_Fields/StepTwoO3">
+    <PAMDataset>
+      <Metadata>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_AuthorAffiliation">NASA/GSFC</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_AuthorName">U.S. OMI Science Team</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_GranuleDay">23</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_GranuleMonth">12</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_GranuleYear">2022</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_history">Subset by NASA GES DISC Level 2 Subsetter v1.5.3.6 at 2023-11-16 19:25:48.369417. Subset parameters: {"PRODUCT": ["OMTO3.003"], "INFILENAMES": ["OMI-Aura_L2-OMTO3_2022m1223t1207-o98082_v003-2022m1223t183313.he5"], "INFILETYPE": ["he5"], "OUTFILETYPE": ["he5"], "VARNAMES": ["/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/APrioriLayerO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/ColumnAmountO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/O3BelowCloud", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/StepOneO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/StepTwoO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/TerrainPressure"], "BOXLONRANGE": [2.437, 2.468], "BOXLATRANGE": [48.769, 48.784], "GRIDTYPES": ["SWATH"], "CONVERTFILETYPE": [false]}</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_InputVersions">OML1BRUG:1.1.3.2 OML1BIRR:1.0.00</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_InstrumentName">OMI</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_OrbitData">PREDICTED</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_PGEVERSION">2.2.1</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_ProcessingCenter">OMI SIPS</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_ProcessingHost">Linux minion7082 5.4.0-1064-fips x86_64</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_ProcessLevel">2</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_TAI93At0zOfGranule">945907210</MDI>
+        <MDI key="HDFEOS_INFORMATION_HDFEOSVersion">HDFEOS_5.1.12</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_EarthSunDistance">1.4715894e+11</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_NumTimes">1644</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_NumTimesSmallPixel">6848</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_VerticalCoordinate">Total Column</MDI>
+      </Metadata>
+      <PAMRasterBand band="1">
+        <Metadata>
+          <MDI key="MissingValue">-1.2676506e+30</MDI>
+          <MDI key="Offset">0</MDI>
+          <MDI key="ScaleFactor">1</MDI>
+          <MDI key="STATISTICS_MAXIMUM">286.94082641602</MDI>
+          <MDI key="STATISTICS_MEAN">286.94082641602</MDI>
+          <MDI key="STATISTICS_MINIMUM">286.94082641602</MDI>
+          <MDI key="STATISTICS_STDDEV">0</MDI>
+          <MDI key="STATISTICS_VALID_PERCENT">100</MDI>
+          <MDI key="Title">Step 2 Ozone Solution</MDI>
+          <MDI key="UniqueFieldDefinition">TOMS-OMI-Shared</MDI>
+          <MDI key="Units">DU</MDI>
+          <MDI key="ValidRange">5 700</MDI>
+          <MDI key="_FillValue">-1.2676506e+30</MDI>
+        </Metadata>
+      </PAMRasterBand>
+    </PAMDataset>
+  </Subdataset>
+  <Subdataset name="//HDFEOS/SWATHS/OMI_Column_Amount_O3/Data_Fields/TerrainPressure">
+    <PAMDataset>
+      <Metadata>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_AuthorAffiliation">NASA/GSFC</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_AuthorName">U.S. OMI Science Team</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_GranuleDay">23</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_GranuleMonth">12</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_GranuleYear">2022</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_history">Subset by NASA GES DISC Level 2 Subsetter v1.5.3.6 at 2023-11-16 19:25:48.369417. Subset parameters: {"PRODUCT": ["OMTO3.003"], "INFILENAMES": ["OMI-Aura_L2-OMTO3_2022m1223t1207-o98082_v003-2022m1223t183313.he5"], "INFILETYPE": ["he5"], "OUTFILETYPE": ["he5"], "VARNAMES": ["/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/APrioriLayerO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/ColumnAmountO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/O3BelowCloud", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/StepOneO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/StepTwoO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/TerrainPressure"], "BOXLONRANGE": [2.437, 2.468], "BOXLATRANGE": [48.769, 48.784], "GRIDTYPES": ["SWATH"], "CONVERTFILETYPE": [false]}</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_InputVersions">OML1BRUG:1.1.3.2 OML1BIRR:1.0.00</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_InstrumentName">OMI</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_OrbitData">PREDICTED</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_PGEVERSION">2.2.1</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_ProcessingCenter">OMI SIPS</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_ProcessingHost">Linux minion7082 5.4.0-1064-fips x86_64</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_ProcessLevel">2</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_TAI93At0zOfGranule">945907210</MDI>
+        <MDI key="HDFEOS_INFORMATION_HDFEOSVersion">HDFEOS_5.1.12</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_EarthSunDistance">1.4715894e+11</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_NumTimes">1644</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_NumTimesSmallPixel">6848</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_VerticalCoordinate">Total Column</MDI>
+      </Metadata>
+      <PAMRasterBand band="1">
+        <Metadata>
+          <MDI key="MissingValue">-1.2676506e+30</MDI>
+          <MDI key="Offset">0</MDI>
+          <MDI key="ScaleFactor">1</MDI>
+          <MDI key="STATISTICS_MAXIMUM">1002.5327148438</MDI>
+          <MDI key="STATISTICS_MEAN">1002.5327148438</MDI>
+          <MDI key="STATISTICS_MINIMUM">1002.5327148438</MDI>
+          <MDI key="STATISTICS_STDDEV">0</MDI>
+          <MDI key="STATISTICS_VALID_PERCENT">100</MDI>
+          <MDI key="Title">Terrain Pressure</MDI>
+          <MDI key="UniqueFieldDefinition">TOMS-OMI-Shared</MDI>
+          <MDI key="Units">hPa</MDI>
+          <MDI key="ValidRange">0 1013.25</MDI>
+          <MDI key="_FillValue">-1.2676506e+30</MDI>
+        </Metadata>
+      </PAMRasterBand>
+    </PAMDataset>
+  </Subdataset>
+  <Subdataset name="//HDFEOS/SWATHS/OMI_Column_Amount_O3/Geolocation_Fields/Latitude">
+    <PAMDataset>
+      <Metadata>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_AuthorAffiliation">NASA/GSFC</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_AuthorName">U.S. OMI Science Team</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_GranuleDay">23</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_GranuleMonth">12</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_GranuleYear">2022</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_history">Subset by NASA GES DISC Level 2 Subsetter v1.5.3.6 at 2023-11-16 19:25:48.369417. Subset parameters: {"PRODUCT": ["OMTO3.003"], "INFILENAMES": ["OMI-Aura_L2-OMTO3_2022m1223t1207-o98082_v003-2022m1223t183313.he5"], "INFILETYPE": ["he5"], "OUTFILETYPE": ["he5"], "VARNAMES": ["/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/APrioriLayerO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/ColumnAmountO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/O3BelowCloud", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/StepOneO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/StepTwoO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/TerrainPressure"], "BOXLONRANGE": [2.437, 2.468], "BOXLATRANGE": [48.769, 48.784], "GRIDTYPES": ["SWATH"], "CONVERTFILETYPE": [false]}</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_InputVersions">OML1BRUG:1.1.3.2 OML1BIRR:1.0.00</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_InstrumentName">OMI</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_OrbitData">PREDICTED</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_PGEVERSION">2.2.1</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_ProcessingCenter">OMI SIPS</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_ProcessingHost">Linux minion7082 5.4.0-1064-fips x86_64</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_ProcessLevel">2</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_TAI93At0zOfGranule">945907210</MDI>
+        <MDI key="HDFEOS_INFORMATION_HDFEOSVersion">HDFEOS_5.1.12</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_EarthSunDistance">1.4715894e+11</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_NumTimes">1644</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_NumTimesSmallPixel">6848</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_VerticalCoordinate">Total Column</MDI>
+      </Metadata>
+      <PAMRasterBand band="1">
+        <Metadata>
+          <MDI key="MissingValue">-1.2676506e+30</MDI>
+          <MDI key="Offset">0</MDI>
+          <MDI key="ScaleFactor">1</MDI>
+          <MDI key="STATISTICS_MAXIMUM">48.740711212158</MDI>
+          <MDI key="STATISTICS_MEAN">48.740711212158</MDI>
+          <MDI key="STATISTICS_MINIMUM">48.740711212158</MDI>
+          <MDI key="STATISTICS_STDDEV">0</MDI>
+          <MDI key="STATISTICS_VALID_PERCENT">100</MDI>
+          <MDI key="Title">Geodetic Latitude</MDI>
+          <MDI key="UniqueFieldDefinition">TOMS-Aura-Shared</MDI>
+          <MDI key="Units">deg</MDI>
+          <MDI key="ValidRange">-90 90</MDI>
+          <MDI key="_FillValue">-1.2676506e+30</MDI>
+        </Metadata>
+      </PAMRasterBand>
+    </PAMDataset>
+  </Subdataset>
+  <Subdataset name="//HDFEOS/SWATHS/OMI_Column_Amount_O3/Geolocation_Fields/Longitude">
+    <PAMDataset>
+      <Metadata>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_AuthorAffiliation">NASA/GSFC</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_AuthorName">U.S. OMI Science Team</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_GranuleDay">23</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_GranuleMonth">12</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_GranuleYear">2022</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_history">Subset by NASA GES DISC Level 2 Subsetter v1.5.3.6 at 2023-11-16 19:25:48.369417. Subset parameters: {"PRODUCT": ["OMTO3.003"], "INFILENAMES": ["OMI-Aura_L2-OMTO3_2022m1223t1207-o98082_v003-2022m1223t183313.he5"], "INFILETYPE": ["he5"], "OUTFILETYPE": ["he5"], "VARNAMES": ["/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/APrioriLayerO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/ColumnAmountO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/O3BelowCloud", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/StepOneO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/StepTwoO3", "/HDFEOS/SWATHS/OMI Column Amount O3/Data Fields/TerrainPressure"], "BOXLONRANGE": [2.437, 2.468], "BOXLATRANGE": [48.769, 48.784], "GRIDTYPES": ["SWATH"], "CONVERTFILETYPE": [false]}</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_InputVersions">OML1BRUG:1.1.3.2 OML1BIRR:1.0.00</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_InstrumentName">OMI</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_OrbitData">PREDICTED</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_PGEVERSION">2.2.1</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_ProcessingCenter">OMI SIPS</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_ProcessingHost">Linux minion7082 5.4.0-1064-fips x86_64</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_ProcessLevel">2</MDI>
+        <MDI key="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES_TAI93At0zOfGranule">945907210</MDI>
+        <MDI key="HDFEOS_INFORMATION_HDFEOSVersion">HDFEOS_5.1.12</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_EarthSunDistance">1.4715894e+11</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_NumTimes">1644</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_NumTimesSmallPixel">6848</MDI>
+        <MDI key="HDFEOS_SWATHS_OMI_Column_Amount_O3_VerticalCoordinate">Total Column</MDI>
+      </Metadata>
+      <PAMRasterBand band="1">
+        <Metadata>
+          <MDI key="MissingValue">-1.2676506e+30</MDI>
+          <MDI key="Offset">0</MDI>
+          <MDI key="ScaleFactor">1</MDI>
+          <MDI key="STATISTICS_MAXIMUM">2.4163825511932</MDI>
+          <MDI key="STATISTICS_MEAN">2.4163825511932</MDI>
+          <MDI key="STATISTICS_MINIMUM">2.4163825511932</MDI>
+          <MDI key="STATISTICS_STDDEV">0</MDI>
+          <MDI key="STATISTICS_VALID_PERCENT">100</MDI>
+          <MDI key="Title">Geodetic Longitude</MDI>
+          <MDI key="UniqueFieldDefinition">TOMS-Aura-Shared</MDI>
+          <MDI key="Units">deg</MDI>
+          <MDI key="ValidRange">-180 180</MDI>
+          <MDI key="_FillValue">-1.2676506e+30</MDI>
+        </Metadata>
+      </PAMRasterBand>
+    </PAMDataset>
+  </Subdataset>
+</PAMDataset>

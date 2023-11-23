@@ -1,0 +1,7 @@
+2023-11-22 20:12:35: Running ACOLITE processing - Generic GitHub Clone c2023-11-22T16:43:38
+2023-11-22 20:12:35: Python - win32 - 3.11.6 | packaged by conda-forge | (main, Oct  3 2023, 10:29:11) [MSC v.1935 64 bit (AMD64)]
+2023-11-22 20:12:35: Platform - Windows 10 - AMD64 - 10.0.22631
+2023-11-22 20:12:35: Run ID - 20231122_200532
+2023-11-22 20:12:35: Identified C:/Users/arthu/Documents/GitHub/remote_sensing_lac_creteil/teste_acolite/Subset_S2A_MSIL1C_20221007T104931_N0400_R051_T31UDQ_20221007T143007_resampled.nc as None type
+2023-11-22 20:12:35: C:/Users/arthu/Documents/GitHub/remote_sensing_lac_creteil/teste_acolite/Subset_S2A_MSIL1C_20221007T104931_N0400_R051_T31UDQ_20221007T143007_resampled.nc not recognized.
+2023-11-22 20:12:35: Not deleting extracted file as "delete_extracted_input" is not in settings.
