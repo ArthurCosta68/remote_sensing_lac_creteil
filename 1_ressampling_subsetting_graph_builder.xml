@@ -1,0 +1,91 @@
+<graph id="Graph">
+  <version>1.0</version>
+  <node id="Read">
+    <operator>Read</operator>
+    <sources/>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <useAdvancedOptions>false</useAdvancedOptions>
+      <file>$Input</file>
+      <copyMetadata>true</copyMetadata>
+      <bandNames/>
+      <pixelRegion>0,0,10980,10980</pixelRegion>
+      <maskNames/>
+    </parameters>
+  </node>
+  <node id="Subset">
+    <operator>Subset</operator>
+    <sources>
+      <sourceProduct refid="Read"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <sourceBands>B1,B2,B3,B4,B5,B6,B7,B8,B8A,B9,B10,B11,B12,B_detector_footprint_B1,B_detector_footprint_B2,B_detector_footprint_B3,B_detector_footprint_B4,B_detector_footprint_B5,B_detector_footprint_B6,B_detector_footprint_B7,B_detector_footprint_B8,B_detector_footprint_B8A,B_detector_footprint_B9,B_detector_footprint_B10,B_detector_footprint_B11,B_detector_footprint_B12,B_ancillary_lost_B1,B_ancillary_degraded_B1,B_msi_lost_B1,B_msi_degraded_B1,B_defective_B1,B_nodata_B1,B_partially_corrected_crosstalk_B1,B_saturated_l1a_B1,B_ancillary_lost_B2,B_ancillary_degraded_B2,B_msi_lost_B2,B_msi_degraded_B2,B_defective_B2,B_nodata_B2,B_partially_corrected_crosstalk_B2,B_saturated_l1a_B2,B_ancillary_lost_B3,B_ancillary_degraded_B3,B_msi_lost_B3,B_msi_degraded_B3,B_defective_B3,B_nodata_B3,B_partially_corrected_crosstalk_B3,B_saturated_l1a_B3,B_ancillary_lost_B4,B_ancillary_degraded_B4,B_msi_lost_B4,B_msi_degraded_B4,B_defective_B4,B_nodata_B4,B_partially_corrected_crosstalk_B4,B_saturated_l1a_B4,B_ancillary_lost_B5,B_ancillary_degraded_B5,B_msi_lost_B5,B_msi_degraded_B5,B_defective_B5,B_nodata_B5,B_partially_corrected_crosstalk_B5,B_saturated_l1a_B5,B_ancillary_lost_B6,B_ancillary_degraded_B6,B_msi_lost_B6,B_msi_degraded_B6,B_defective_B6,B_nodata_B6,B_partially_corrected_crosstalk_B6,B_saturated_l1a_B6,B_ancillary_lost_B7,B_ancillary_degraded_B7,B_msi_lost_B7,B_msi_degraded_B7,B_defective_B7,B_nodata_B7,B_partially_corrected_crosstalk_B7,B_saturated_l1a_B7,B_ancillary_lost_B8,B_ancillary_degraded_B8,B_msi_lost_B8,B_msi_degraded_B8,B_defective_B8,B_nodata_B8,B_partially_corrected_crosstalk_B8,B_saturated_l1a_B8,B_ancillary_lost_B8A,B_ancillary_degraded_B8A,B_msi_lost_B8A,B_msi_degraded_B8A,B_defective_B8A,B_nodata_B8A,B_partially_corrected_crosstalk_B8A,B_saturated_l1a_B8A,B_ancillary_lost_B9,B_ancillary_degraded_B9,B_msi_lost_B9,B_msi_degraded_B9,B_defective_B9,B_nodata_B9,B_partially_corrected_crosstalk_B9,B_saturated_l1a_B9,B_ancillary_lost_B10,B_ancillary_degraded_B10,B_msi_lost_B10,B_msi_degraded_B10,B_defective_B10,B_nodata_B10,B_partially_corrected_crosstalk_B10,B_saturated_l1a_B10,B_ancillary_lost_B11,B_ancillary_degraded_B11,B_msi_lost_B11,B_msi_degraded_B11,B_defective_B11,B_nodata_B11,B_partially_corrected_crosstalk_B11,B_saturated_l1a_B11,B_ancillary_lost_B12,B_ancillary_degraded_B12,B_msi_lost_B12,B_msi_degraded_B12,B_defective_B12,B_nodata_B12,B_partially_corrected_crosstalk_B12,B_saturated_l1a_B12,B_opaque_clouds,B_cirrus_clouds,B_snow_and_ice_areas,view_zenith_mean,view_azimuth_mean,sun_zenith,sun_azimuth,view_zenith_B1,view_azimuth_B1,view_zenith_B2,view_azimuth_B2,view_zenith_B3,view_azimuth_B3,view_zenith_B4,view_azimuth_B4,view_zenith_B5,view_azimuth_B5,view_zenith_B6,view_azimuth_B6,view_zenith_B7,view_azimuth_B7,view_zenith_B8,view_azimuth_B8,view_zenith_B8A,view_azimuth_B8A,view_zenith_B9,view_azimuth_B9,view_zenith_B10,view_azimuth_B10,view_zenith_B11,view_azimuth_B11,view_zenith_B12,view_azimuth_B12</sourceBands>
+      <tiePointGrids/>
+      <region>0,0,0,0</region>
+      <referenceBand>B3</referenceBand>
+      <geoRegion>POLYGON ((2.4401040077209473 48.78445053100586, 2.466858148574829 48.78445053100586, 2.466858148574829 48.769020080566406, 2.4401040077209473 48.769020080566406, 2.4401040077209473 48.78445053100586, 2.4401040077209473 48.78445053100586))</geoRegion>
+      <subSamplingX>1</subSamplingX>
+      <subSamplingY>1</subSamplingY>
+      <fullSwath>false</fullSwath>
+      <copyMetadata>true</copyMetadata>
+    </parameters>
+  </node>
+  <node id="Resample">
+    <operator>Resample</operator>
+    <sources>
+      <sourceProduct refid="Subset"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <referenceBand>B2</referenceBand>
+      <targetWidth/>
+      <targetHeight/>
+      <targetResolution/>
+      <upsampling>Nearest</upsampling>
+      <downsampling>First</downsampling>
+      <flagDownsampling>First</flagDownsampling>
+      <resamplingPreset/>
+      <bandResamplings/>
+      <resampleOnPyramidLevels>true</resampleOnPyramidLevels>
+    </parameters>
+  </node>
+  <node id="Idepix.S2">
+    <operator>Idepix.S2</operator>
+    <sources>
+      <sourceProduct refid="Resample"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <copyToaReflectances>true</copyToaReflectances>
+      <copyFeatureValues>false</copyFeatureValues>
+      <computeMountainShadow>true</computeMountainShadow>
+      <computeCloudShadow>false</computeCloudShadow>
+      <computeCloudBuffer>true</computeCloudBuffer>
+      <computeCloudBufferForCloudAmbiguous>true</computeCloudBufferForCloudAmbiguous>
+      <cloudBufferWidth>2</cloudBufferWidth>
+      <demName>SRTM 3Sec</demName>
+    </parameters>
+  </node>
+  <node id="Write">
+    <operator>Write</operator>
+    <sources>
+      <sourceProduct refid="Idepix.S2"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <file>$Output</file>
+      <formatName>BEAM-DIMAP</formatName>
+    </parameters>
+  </node>
+  <applicationData id="Presentation">
+    <Description/>
+    <node id="Read">
+            <displayPosition x="19.0" y="136.0"/>
+    </node>
+    <node id="Subset">
+      <displayPosition x="225.0" y="137.0"/>
+    </node>
+    <node id="Resample">
+      <displayPosition x="127.0" y="137.0"/>
+    </node>
+    <node id="Write">
+            <displayPosition x="334.0" y="137.0"/>
+    </node>
+  </applicationData>
+</graph>

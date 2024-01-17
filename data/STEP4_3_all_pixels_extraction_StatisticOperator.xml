@@ -1,0 +1,51 @@
+
+<graph id="StatisticsGraph">
+  <version>1.0</version>
+
+  <node id="Read">
+    <operator>Read</operator>
+    <sources/>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+       <file>$Input</file>
+       <formatName>BEAM-DIMAP</formatName>
+    </parameters>
+  </node>
+
+  <node id="StatisticsOp">
+    <operator>StatisticsOp</operator>
+    <sources>
+       <sourceProduct refid="Read"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+       <bandConfigurations>
+          <bandConfiguration>
+            <sourceBandName>conc_chl</sourceBandName>
+          </bandConfiguration>
+          <bandConfiguration>
+            <sourceBandName>conc_tsm</sourceBandName>
+          </bandConfiguration>
+          <bandConfiguration>
+            <sourceBandName>3_bands_model_chl_conc</sourceBandName>
+          </bandConfiguration>
+          <bandConfiguration>
+            <sourceBandName>MCI</sourceBandName>
+          </bandConfiguration>
+          <bandConfiguration>
+            <sourceBandName>empirical_2_bands_equation1</sourceBandName>
+          </bandConfiguration>
+          <bandConfiguration>
+            <sourceBandName>empirical_2_bands_equation2</sourceBandName>
+          </bandConfiguration>
+          <bandConfiguration>
+            <sourceBandName>empirical_3_bands_equation1</sourceBandName>
+          </bandConfiguration>
+          <bandConfiguration>
+            <sourceBandName>empirical_3_bands_equation3</sourceBandName>
+          </bandConfiguration>
+       </bandConfigurations>
+       <outputAsciiFile>$Output</outputAsciiFile>
+       <percentiles>80,85,90</percentiles>
+    </parameters>
+  </node>
+
+</graph>

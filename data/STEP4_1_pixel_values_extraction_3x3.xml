@@ -1,0 +1,34 @@
+<graph id="pixExGraph">
+  <version>1.0</version>
+  <node id="someNodeId">
+    <operator>PixEx</operator>
+    <parameters>
+    <sourceProductPaths>$Input</sourceProductPaths>
+    <exportBands>true</exportBands>
+    <exportTiePoints>true</exportTiePoints>
+    <exportMasks>true</exportMasks>
+    <coordinates>
+        <coordinate>
+            <name>Estacao</name>
+            <latitude>48.7744444</latitude>
+            <longitude>2.4525</longitude>
+            <originalValues/>
+            <id>0</id>
+        </coordinate>
+    </coordinates>
+    <timeDifference/>
+    <windowSize>3</windowSize>
+    <outputDir>$Output</outputDir>
+    <outputFilePrefix>pixEx_3x3_</outputFilePrefix>
+    <exportExpressionResult>true</exportExpressionResult>
+    <aggregatorStrategyType>mean</aggregatorStrategyType>
+    <exportSubScenes>false</exportSubScenes>
+    <subSceneBorderSize>0</subSceneBorderSize>
+    <exportKmz>false</exportKmz>
+    <extractTimeFromFilename>false</extractTimeFromFilename>
+    <dateInterpretationPattern>yyyyMMdd</dateInterpretationPattern>
+    <filenameInterpretationPattern>*${startDate}*${endDate}*</filenameInterpretationPattern>
+    <includeOriginalInput>false</includeOriginalInput>
+  </parameters>
+  </node>
+</graph>

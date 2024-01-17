@@ -1,0 +1,12 @@
+name	Band	
+world	3_bands_model_chl_conc
+world	conc_chl
+world	conc_tsm
+world	empirical_2_bands_equation1
+world	empirical_2_bands_equation2
+world	empirical_3_bands_equation1
+world	empirical_3_bands_equation3
+world	rrs_B4
+world	rrs_B5
+world	rrs_B6
+world	rrs_B7

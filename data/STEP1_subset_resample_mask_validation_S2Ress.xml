@@ -1,0 +1,84 @@
+<graph id="Graph">
+  <version>1.0</version>
+  <node id="Read">
+    <operator>Read</operator>
+    <sources/>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <file>C:\Users\arthu\Documents\GitHub\remote_sensing_lac_creteil\L1C_zip_files_validation\S2B_MSIL1C_20231206T105339_N0509_R051_T31UDQ_20231206T113607.SAFE.zip</file>
+    </parameters>
+  </node>
+  <node id="S2Resampling">
+    <operator>S2Resampling</operator>
+    <sources>
+      <sourceProduct refid="Read"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <resolution>20</resolution>
+      <upsampling>Bilinear</upsampling>
+      <downsampling>Mean</downsampling>
+      <flagDownsampling>First</flagDownsampling>
+      <resampleOnPyramidLevels>true</resampleOnPyramidLevels>
+    </parameters>
+  </node>
+  <node id="Subset">
+    <operator>Subset</operator>
+    <sources>
+      <sourceProduct refid="S2Resampling"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <sourceBands/>
+      <region>0,0,0,0</region>
+      <referenceBand/>
+      <geoRegion>POLYGON ((2.4401040077209473 48.78445053100586, 2.466858148574829 48.78445053100586, 2.466858148574829 48.769020080566406, 2.4401040077209473 48.769020080566406, 2.4401040077209473 48.78445053100586, 2.4401040077209473 48.78445053100586))</geoRegion>
+      <subSamplingX>1</subSamplingX>
+      <subSamplingY>1</subSamplingY>
+      <fullSwath>false</fullSwath>
+      <tiePointGrids/>
+      <copyMetadata>true</copyMetadata>
+    </parameters>
+  </node>
+  <node id="Idepix.S2">
+    <operator>Idepix.S2</operator>
+    <sources>
+      <sourceProduct refid="Subset"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <copyToaReflectances>true</copyToaReflectances>
+      <copyFeatureValues>false</copyFeatureValues>
+      <computeMountainShadow>true</computeMountainShadow>
+      <computeCloudShadow>true</computeCloudShadow>
+      <computeCloudBuffer>true</computeCloudBuffer>
+      <computeCloudBufferForCloudAmbiguous>true</computeCloudBufferForCloudAmbiguous>
+      <cloudBufferWidth>2</cloudBufferWidth>
+      <demName>SRTM 3Sec</demName>
+    </parameters>
+  </node>
+  <node id="Write">
+    <operator>Write</operator>
+    <sources>
+      <sourceProduct refid="Idepix.S2"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <file>C:\Users\arthu\target.dim</file>
+      <formatName>BEAM-DIMAP</formatName>
+    </parameters>
+  </node>
+  <applicationData id="Presentation">
+    <Description/>
+    <node id="Read">
+            <displayPosition x="37.0" y="134.0"/>
+    </node>
+    <node id="S2Resampling">
+      <displayPosition x="127.0" y="134.0"/>
+    </node>
+    <node id="Subset">
+      <displayPosition x="240.0" y="136.0"/>
+    </node>
+    <node id="Idepix.S2">
+      <displayPosition x="322.0" y="139.0"/>
+    </node>
+    <node id="Write">
+            <displayPosition x="455.0" y="135.0"/>
+    </node>
+  </applicationData>
+</graph>

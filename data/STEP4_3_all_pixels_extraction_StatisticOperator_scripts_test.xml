@@ -1,0 +1,30 @@
+
+<graph id="StatisticsGraph">
+  <version>1.0</version>
+
+  <node id="Read">
+    <operator>Read</operator>
+    <sources/>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+       <file>$Input</file>
+       <formatName>BEAM-DIMAP</formatName>
+    </parameters>
+  </node>
+
+  <node id="StatisticsOp">
+    <operator>StatisticsOp</operator>
+    <sources>
+       <sourceProduct refid="Read"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+       <bandConfigurations>
+          <bandConfiguration>
+            <sourceBandName>NDCIv</sourceBandName>
+          </bandConfiguration>
+       </bandConfigurations>
+       <outputAsciiFile>$Output</outputAsciiFile>
+       <percentiles>80,85,90</percentiles>
+    </parameters>
+  </node>
+
+</graph>

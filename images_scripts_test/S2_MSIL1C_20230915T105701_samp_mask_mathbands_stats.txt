@@ -1,0 +1,2 @@
+name	Band	average	max_error	maximum	median	minimum	p80_threshold	p85_threshold	p90_threshold	sigma	total
+world	NDCIv	3.1224	0.1291	4.8760	3.3266	-124.2333	3.7140	3.8431	3.8431	3.1989	2690

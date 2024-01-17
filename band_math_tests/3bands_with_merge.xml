@@ -1,0 +1,125 @@
+<graph id="Graph">
+  <version>1.0</version>
+  <node id="Read">
+    <operator>Read</operator>
+    <sources/>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <useAdvancedOptions>true</useAdvancedOptions>
+      <file>C:\Users\arthu\Documents\GitHub\remote_sensing_lac_creteil\c2rcc\S2_MSIL1C_20221022T105009_samp_mask_C2RCC.dim</file>
+      <copyMetadata>true</copyMetadata>
+      <bandNames>pixel_classif_flags,rtoa_B1,rtoa_B2,rtoa_B3,rtoa_B4,rtoa_B5,rtoa_B6,rtoa_B7,rtoa_B8,rtoa_B8A,rtoa_B9,rtoa_B10,rtoa_B11,rtoa_B12,rpath_B1,rpath_B2,rpath_B3,rpath_B4,rpath_B5,rpath_B6,rpath_B7,rpath_B8A,rrs_B1,rrs_B2,rrs_B3,rrs_B4,rrs_B5,rrs_B6,rrs_B7,rrs_B8A,rhown_B1,rhown_B2,rhown_B3,rhown_B4,rhown_B5,rhown_B6,iop_apig,iop_adet,iop_agelb,iop_bpart,iop_bwit,iop_adg,iop_atot,iop_btot,kd489,kdmin,kd_z90max,conc_tsm,conc_chl,unc_apig,unc_adet,unc_agelb,unc_bpart,unc_bwit,unc_adg,unc_atot,unc_btot,unc_tsm,unc_chl,unc_kd489,unc_kdmin</bandNames>
+      <pixelRegion>0,0,198,173</pixelRegion>
+      <maskNames/>
+    </parameters>
+  </node>
+  <node id="BandMerge">
+    <operator>BandMerge</operator>
+    <sources>
+      <sourceProduct refid="BandMaths"/>
+      <sourceProduct.1 refid="Read(2)"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <sourceBands/>
+      <geographicError>1.0E-5</geographicError>
+    </parameters>
+  </node>
+  <node id="BandMaths">
+    <operator>BandMaths</operator>
+    <sources>
+      <sourceProduct refid="Read"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <targetBands>
+        <targetBand>
+          <name>3_bands_model_chl_conc</name>
+          <type>float32</type>
+          <expression>161.24*((1/ rrs_B4 - 1/ rrs_B5)/(1/ rrs_B6 - 1/ rrs_B5))+28.04</expression>
+          <description/>
+          <unit/>
+          <noDataValue>NaN</noDataValue>
+        </targetBand>
+        <targetBand>
+          <name>MCI</name>
+          <type>float32</type>
+          <expression>rrs_B5 - rrs_B4 - (rrs_B6 -rrs_B4)*((709-665)/(754-665))</expression>
+          <description/>
+          <unit/>
+          <noDataValue>NaN</noDataValue>
+        </targetBand>
+        <targetBand>
+          <name>empirical_2_bands_equation1</name>
+          <type>float32</type>
+          <expression>136.3 * (rrs_B6/rrs_B4) - 16.2</expression>
+          <description/>
+          <unit/>
+          <noDataValue>NaN</noDataValue>
+        </targetBand>
+        <targetBand>
+          <name>empirical_2_bands_equation2</name>
+          <type>float32</type>
+          <expression>25.28*(rrs_B5/rrs_B4)^2 + 14.85 * (rrs_B5/rrs_B4) - 15.18</expression>
+          <description/>
+          <unit/>
+          <noDataValue>NaN</noDataValue>
+        </targetBand>
+        <targetBand>
+          <name>empirical_3_bands_equation1</name>
+          <type>float32</type>
+          <expression>117.42 * ((1/rrs_B4 - 1/rrs_B5))*rrs_B6 + 23.174</expression>
+          <description/>
+          <unit/>
+          <noDataValue>NaN</noDataValue>
+        </targetBand>
+        <targetBand>
+          <name>empirical_3_bands_equation3</name>
+          <type>float32</type>
+          <expression>315.5 * (((1/rrs_B4 - 1/rrs_B5))*rrs_B6)^2 + 215.95 * ((1/rrs_B4 - 1/rrs_B5))*rrs_B6 + 25.66</expression>
+          <description/>
+          <unit/>
+          <noDataValue>NaN</noDataValue>
+        </targetBand>
+      </targetBands>
+      <variables/>
+    </parameters>
+  </node>
+  <node id="Read(2)">
+    <operator>Read</operator>
+    <sources/>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <useAdvancedOptions>false</useAdvancedOptions>
+      <file>C:\Users\arthu\Documents\GitHub\remote_sensing_lac_creteil\c2rcc\S2_MSIL1C_20221022T105009_samp_mask_C2RCC.dim</file>
+      <copyMetadata>true</copyMetadata>
+      <bandNames/>
+      <pixelRegion>0,0,198,173</pixelRegion>
+      <maskNames/>
+    </parameters>
+  </node>
+  <node id="Write">
+    <operator>Write</operator>
+    <sources>
+      <sourceProduct refid="BandMerge"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <file>C:\Users\arthu\Documents\GitHub\remote_sensing_lac_creteil\band_math_tests\S2_MSIL1C_20221022T105009_samp_mask_C2RCC_BandMaths.dim</file>
+      <formatName>BEAM-DIMAP</formatName>
+    </parameters>
+  </node>
+  <applicationData id="Presentation">
+    <Description/>
+    <node id="Read">
+            <displayPosition x="37.0" y="134.0"/>
+    </node>
+    <node id="BandMerge">
+      <displayPosition x="242.0" y="134.0"/>
+    </node>
+    <node id="BandMaths">
+      <displayPosition x="118.0" y="134.0"/>
+    </node>
+    <node id="Read(2)">
+      <displayPosition x="250.0" y="190.0"/>
+    </node>
+    <node id="Write">
+            <displayPosition x="455.0" y="135.0"/>
+    </node>
+  </applicationData>
+</graph>
