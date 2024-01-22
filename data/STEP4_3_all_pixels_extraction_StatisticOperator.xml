@@ -25,6 +25,9 @@
             <sourceBandName>conc_tsm</sourceBandName>
           </bandConfiguration>
           <bandConfiguration>
+            <sourceBandName>kd_z90max</sourceBandName>
+          </bandConfiguration>
+          <bandConfiguration>
             <sourceBandName>3_bands_model_chl_conc</sourceBandName>
           </bandConfiguration>
           <bandConfiguration>

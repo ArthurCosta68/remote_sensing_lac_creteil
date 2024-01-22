@@ -1,5 +1,5 @@
 <parameters>
-    <validPixelExpression>B8 &gt; 0 &amp;&amp; B8 &lt; 0.1 &amp;&amp;  not (IDEPIX_INVALID == 255 or IDEPIX_CLOUD == 255 or IDEPIX_CLOUD_AMBIGUOUS == 255 or IDEPIX_CLOUD_SURE == 255 or IDEPIX_CLOUD_BUFFER == 255 or IDEPIX_CLOUD_SHADOW == 255 or IDEPIX_CIRRUS_SURE == 255 or IDEPIX_CIRRUS_AMBIGUOUS == 255 or IDEPIX_LAND == 255)</validPixelExpression>
+    <validPixelExpression>B8 &gt; 0 &amp;&amp; B8 &lt; 0.1 &amp;&amp;  not (IDEPIX_INVALID == 255 or IDEPIX_CLOUD == 255 or IDEPIX_CLOUD_AMBIGUOUS == 255 or IDEPIX_CLOUD_SURE == 255 or IDEPIX_CLOUD_BUFFER == 255 or IDEPIX_CLOUD_SHADOW == 255 or IDEPIX_CIRRUS_SURE == 255 or IDEPIX_LAND == 255)</validPixelExpression>
     <salinity>1.0</salinity>
     <temperature>15</temperature>
     <ozone>330</ozone>
