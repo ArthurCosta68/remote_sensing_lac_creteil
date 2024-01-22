@@ -38,7 +38,7 @@
         <targetBand>
           <name>3_bands_model_chl_conc</name>
           <type>float32</type>
-          <expression>161.24*((1/ rrs_B4 - 1/ rrs_B5)/(1/ rrs_B6 - 1/ rrs_B5))+28.04</expression>
+          <expression>((1/ rrs_B4 - 1/ rrs_B5)/(1/ rrs_B6 - 1/ rrs_B5))</expression>
           <description/>
           <unit/>
           <noDataValue>NaN</noDataValue>
