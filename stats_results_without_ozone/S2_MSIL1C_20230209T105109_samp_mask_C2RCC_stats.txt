@@ -1,3 +1,0 @@
-name	Band	
-world	conc_chl
-world	conc_tsm

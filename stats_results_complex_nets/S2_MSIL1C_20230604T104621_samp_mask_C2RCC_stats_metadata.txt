@@ -1,7 +1,0 @@
-# SNAP Statistics export
-#
-# Products:
-#              c:\Users\arthu\Documents\GitHub\remote_sensing_lac_creteil\c2rcc_complex_nets\S2_MSIL1C_20230604T104621_samp_mask_C2RCC.dim
-#
-# Regions:
-#              world

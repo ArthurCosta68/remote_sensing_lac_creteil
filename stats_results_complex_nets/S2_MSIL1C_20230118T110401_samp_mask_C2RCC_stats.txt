@@ -1,3 +1,0 @@
-name	Band	average	max_error	maximum	median	minimum	p80_threshold	p85_threshold	p90_threshold	sigma	total
-world	conc_chl	32.7442	0.5757	575.6549	2.8800	0.0018	47.7810	63.3236	94.4089	67.6287	2938
-world	conc_tsm	1.9917	0.1758	175.8762	0.2487	0.0729	0.7761	1.3035	2.0067	9.2123	2938
