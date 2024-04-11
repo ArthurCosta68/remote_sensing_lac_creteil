@@ -109,7 +109,6 @@
     <operator>Read</operator>
     <sources/>
     <parameters class="com.bc.ceres.binding.dom.XppDomElement">
-      
       <file>$Input</file>
       <copyMetadata>true</copyMetadata>
       <bandNames/>

@@ -143,7 +143,7 @@
         <targetBand>
           <name>empirical_2_bands_equation1</name>
           <type>float32</type>
-          <expression>85.36018452 * (rrs_B6/rrs_B4) - 55.68011838</expression>
+          <expression>85.36018452 * (rrs_B6/rrs_B4) - 10.68011838</expression>
           <description/>
           <unit/>
           <noDataValue>NaN</noDataValue>
