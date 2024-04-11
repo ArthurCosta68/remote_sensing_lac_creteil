@@ -1,4 +1,0 @@
-#description=Default vector data container for geometries (automatically created)
-#defaultCSS=fill:#aaff00; fill-opacity:0.5; stroke:#ffffff; stroke-opacity:1.0; stroke-width:1.0; symbol:cross
-org.esa.snap.Geometry	geometry:Geometry	style_css:String
-ID975d110ecd8c	POLYGON ((458673.44875530974 5403512.523840178, 460871.5763652839 5403512.523840178, 460871.5763652839 5402028.834954684, 458673.44875530974 5402028.834954684, 458673.44875530974 5403512.523840178))	[null]
