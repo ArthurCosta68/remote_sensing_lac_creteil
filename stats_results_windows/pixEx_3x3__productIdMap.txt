@@ -27,3 +27,4 @@ ProductID	ProductType	ProductLocation
 24	BandMath	C:\Users\arthu\Documents\GitHub\remote_sensing_lac_creteil\c2rcc_final_bands\S2_MSIL1C_20230910T105629_samp_mask_C2RCC_mathbands.dim
 25	BandMath	C:\Users\arthu\Documents\GitHub\remote_sensing_lac_creteil\c2rcc_final_bands\S2_MSIL1C_20230915T105701_samp_mask_C2RCC_mathbands.dim
 26	BandMath	C:\Users\arthu\Documents\GitHub\remote_sensing_lac_creteil\c2rcc_final_bands\S2_MSIL1C_20230925T105801_samp_mask_C2RCC_mathbands.dim
+27	BandMath	C:\Users\arthu\Documents\GitHub\remote_sensing_lac_creteil\c2rcc_final_bands\S2_MSIL1C_20240217T110019_samp_mask_C2RCC_mathbands.dim
