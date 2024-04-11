@@ -39,8 +39,6 @@
     <a href="https://github.com/ArthurCosta68/remote_sensing_lac_creteil"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ArthurCosta68/remote_sensing_lac_creteil">View Demo</a>
-    ·
     <a href="https://github.com/ArthurCosta68/remote_sensing_lac_creteil/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
     <a href="https://github.com/ArthurCosta68/remote_sensing_lac_creteil/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
