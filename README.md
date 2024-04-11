@@ -39,8 +39,6 @@
     <a href="https://github.com/ArthurCosta68/remote_sensing_lac_creteil"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ArthurCosta68/remote_sensing_lac_creteil">View Demo</a>
-    ·
     <a href="https://github.com/ArthurCosta68/remote_sensing_lac_creteil/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
     <a href="https://github.com/ArthurCosta68/remote_sensing_lac_creteil/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
@@ -200,8 +198,7 @@ Project Link: [https://github.com/ArthurCosta68/remote_sensing_lac_creteil](http
 [license-shield]: https://img.shields.io/github/license/ArthurCosta68/remote_sensing_lac_creteil.svg?style=for-the-badge
 [license-url]: https://github.com/ArthurCosta68/remote_sensing_lac_creteil/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: data/images/imagem_produto_final.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
