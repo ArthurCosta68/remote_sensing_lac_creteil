@@ -1,0 +1,7 @@
+Date(yyyy-MM-dd),3_bands_model_chl_conc_mean,3_bands_model_chl_conc_sigma,3_bands_model_chl_conc_num_pixels,kd_z90max_mean,kd_z90max_sigma,kd_z90max_num_pixels,conc_tsm_mean,conc_tsm_sigma,conc_tsm_num_pixels,conc_chl_mean,conc_chl_sigma,conc_chl_num_pixels,MCI_mean,MCI_sigma,MCI_num_pixels,empirical_2_bands_equation1_mean,empirical_2_bands_equation1_sigma,empirical_2_bands_equation1_num_pixels,empirical_2_bands_equation2_mean,empirical_2_bands_equation2_sigma,empirical_2_bands_equation2_num_pixels,empirical_3_bands_equation1_mean,empirical_3_bands_equation1_sigma,empirical_3_bands_equation1_num_pixels,empirical_3_bands_equation3_mean,empirical_3_bands_equation3_sigma,empirical_3_bands_equation3_num_pixels,window_size
+2024-02-17,19.235302,1.1540648,9,0.75988185,0.052217446,9,3.2088752,1.434011,9,6.530636,1.7615312,9,0.00024759362,0.000110925794,9,31.30781,3.582575,9,19.30899,1.2807952,9,19.200893,0.6585807,9,18.723007,1.0798717,9,3
+2024-02-27,,0.0,0,,0.0,0,,0.0,0,,0.0,0,0.0,0.0,9,,0.0,0,,0.0,0,,0.0,0,,0.0,0,3
+2024-04-02,,0.0,0,,0.0,0,,0.0,0,,0.0,0,0.0,0.0,9,,0.0,0,,0.0,0,,0.0,0,,0.0,0,3
+2024-02-17,18.999256,1.848114,25,0.76979613,0.066541806,25,3.0948408,1.6523917,25,5.9158587,2.9460294,25,0.0002560699,0.00012327939,25,30.787487,3.018218,25,19.119438,1.430139,25,19.07724,0.9040368,25,18.52756,1.495242,25,5
+2024-02-27,,0.0,0,,0.0,0,,0.0,0,,0.0,0,0.0,0.0,25,,0.0,0,,0.0,0,,0.0,0,,0.0,0,5
+2024-04-02,,0.0,0,,0.0,0,,0.0,0,,0.0,0,0.0,0.0,25,,0.0,0,,0.0,0,,0.0,0,,0.0,0,5
