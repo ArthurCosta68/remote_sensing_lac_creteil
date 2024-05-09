@@ -141,13 +141,68 @@ You will need to download the Sentinel-2 L1C images from the <a href="https://br
 <!-- USAGE EXAMPLES -->
 ## Documentation
 
-### Pre processing
+### Quick Guide - Step by Step
+
+This is the step-by-step process for running the code. To understand the algorithms, see the "#Preprocessing" section below. The step-by-step is divided into two stages: Images for Training and Images for Validation.
+
+#### Images for training:
+
+1. Select and download the images in the Copernicus Browser
+
+2. Place the images (.zip) in the L1C_zip_files folder
+
+3. Obtain the temperature, pressure and ozone data for the days of the selected images, and place all the information in the file data/meteo_data.csv
+
+4. After that, you can run all the code in the pre_processing.ipynb file. This file will generate two files in the data folder: 
+	1. data/results_window_calculation_final.csv which consolidates the data from the analysis of the 3x3 and 5x5 windows (Look at the last column).
+	2. data/results_final_bands_final.csv which consolidates the data from the analysis of the pxiels of the entire lake.
+Both are in different formats, but what should be extracted from them for further analysis is the mean and standard deviation of the "conc_chl" variable.
+
+5. As mentioned in the previous step, conc_chl should be extracted and added to the file Analysis_folder/results_consolidate_for_pandas_v2.xlsx where, on the results_initial tab, the dates of the images should be added, as well as the information on the mean and standard deviation of the bio-optical models. Chlorophyll concentration data should also be added to the file on the "data_loco" tab. If available, the relevant data can be added to the "vimeo_data_sentor", "meteo" and "laboratory_data" tabs.
+
+6. After running the pre-processing stage, pre-processed images will be generated in the c2rcc_final_bands folder, each of which must be opened in SNAP and converted to a GeoTIFF file (Select the image in SNAP and go to File->Export-> GeoTiff) and saved in the "Analysis_folder/tif_files" folder.
+
+7. You can then run the first cells of the Data Processing session of the results_analysis_v2 file. You may need to adjust the relevant dates for the new images and in situ chlorophyll data obtained in the graph slicers.
+
+8. In the "Analysis using directly information from TIF files" section, there will be a step where the model parameters will be adjusted. With this adjustment, you can change the model parameters in the "data/STEP3_chla_algorithms_calculation.xml" file, which is used in the pre-processing stage to obtain the validation images.
+
+9. After running this entire session, you will be able to obtain, both using the pre-processing data and the band data directly from the image, the scatter plots and, in the case of analysis directly from GeoTIFF, the chlorophyll concentration maps.
+
+### Images for validation:
+
+1. Select and download the images in the Copernicus Browser
+
+2. Place the images (.zip) in the L1C_zip_files folder
+
+3. Obtain the temperature, pressure and ozone data for the days of the selected images, and place all the information in the file data/meteo_data.csv
+
+4. After that, you can run all the code in the pre_processing.ipynb file. This file will generate two files in the data folder: 
+	1. data/results_window_calculation_final.csv which consolidates the data from the analysis of the 3x3 and 5x5 windows (Look at the last column).
+	2. data/results_final_bands_final.csv which consolidates the data from the analysis of the pxiels of the entire lake.
+Both are in different formats, but what should be extracted from them for further analysis is the mean and standard deviation of the "conc_chl" variable.
+
+5. As mentioned in the previous step, the conc_chl should be extracted and added to the file Analysis_folder/results_consolidate_for_pandas_v2.xlsx where, on the results_final tab, the dates of the images should be added, as well as the information on the mean and standard deviation of the conc_chl from the files generated in the previous step. Chlorophyll concentration data should also be added to the file on the data_loco_validation tab. If necessary, the relevant data can be added to the "vimeo_data_sentor", "meteo_data" and "laboratory_data" tabs.
+
+6. After running the pre-processing stage, pre-processed images will be generated in the c2rcc_final_bands folder, each of which must be opened in SNAP and converted to a GeoTIFF file (Select the image in SNAP and go to File->Export-> GeoTiff) and saved in the "Analysis_folder/validation_images_tif" folder.
+
+7. You can then run the cells from the last "Data Processing Foz" session in the results_analysis_v2 file. You may need to adjust the relevant dates in the graph slicers for the new images and in situ chlorophyll data obtained.
+
+8. After running this entire session, you will be able to obtain, either using the pre-processing data or the band data directly from the image, the scatter plots and, in the case of analysis directly from GeoTIFF, the chlorophyll concentration maps.
+
+### Pre-processing explained
 
 The code (<a href="https://github.com/ArthurCosta68/remote_sensing_lac_creteil/blob/main/pre_processing.ipynb"> pre_processing.ipynb </a>) has the following pre-processing steps:
 
 #### Subset & Resample
 
 In the first step, the code uses the L1C images contained in the L1C_zip_files folder together with the SNAP processing in xml (data/STEP1_subset_resample_mask.xml) and saves the new images after renaming in the "l1c_ressampled_masked" folder.
+
+
+#### Meteo Data
+
+For get Temperature data, you need to extract from Grafana.
+Ozone data, you will use the script on data/ozone_final.ipynb, after you extract the URLs for download the products from  https://disc.gsfc.nasa.gov/datasets/OMTO3_003/summary.
+And finally, for Pressure, you will need to download data of Surface pressure from https://psl.noaa.gov/data/gridded/data.ncep.reanalysis2.html
 
 #### C2RCC atmospheric correction
 
@@ -207,13 +262,7 @@ After extracting the 3x3 and 5x5 window, the data is consolidated in the file da
 
 The statistical indicators for each band were extracted for all the pixels. This data was saved in data/results_final_bands_final.csv
 
-### Pre processing
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 
 <!-- LICENSE -->
 ## License
@@ -221,7 +270,6 @@ The statistical indicators for each band were extracted for all the pixels. This
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- CONTACT -->
